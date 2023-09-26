@@ -22,7 +22,7 @@ Open Visual Studio Code:
 Launch VS Code by clicking on its icon in your computer's application menu.
 
 Open the Integrated Terminal:
-In VS Code, open the integrated terminal by pressing Ctrl+ (backtick) or by clickingView>Terminal` from the top menu.
+In VS Code, open the integrated terminal by clickingView>Terminal` from the top menu.
 
 Navigate to the Directory Where You Want to Clone the Repository:
 You can either method
