@@ -1,3 +1,0 @@
-1: Simple example of how to use JavaScript to manipulate the DOM
-
-2: Create new html elements in JavaScript and insert them into the DOM
