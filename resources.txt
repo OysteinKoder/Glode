@@ -1,0 +1,12 @@
+array methods "most important": 
+https://twitter.com/davidm_ml/status/1680489987396059138
+
+MDN all array methods: 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+MDN Object methods:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
+
+Manipulating html from js:
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents
+

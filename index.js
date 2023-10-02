@@ -3,6 +3,8 @@ const myArray = ["a", "b", "c", "d", "e", "f", "g", "h"];
 console.log(myArray);
 console.table(myArray);
 
+// Array Methods
+
 // Objects
 const myObject = {
   nameKey: "John",
@@ -11,32 +13,21 @@ const myObject = {
 };
 console.log(myObject);
 
-// 1. Simple example of how to use JavaScript to manipulate the DOM
+// Object Methods
 
-// Get the element with an id of "text-example" and save it to a variable
-const textExample = document.querySelector("#text-example");
+// Loops.
 
-// Change the text of the element to "Hello World!"
-textExample.innerHTML = "Hello World!";
-
-// Change the color of the text to "red"
-textExample.style.color = "red";
-
-// Change the font size to 2rem
-textExample.style.fontSize = "2rem";
-
-//
-//
-
-// 2. Create a totally new html element in JavaScript and insert them into a parent
-
-// Without function
+// javascript to manipulate the dom
 
 const insertElementHere = document.querySelector("#insert-element-here");
 
 const newElement = document.createElement("p");
 
+newElement.id = "new-element";
+
 insertElementHere.appendChild(newElement);
+
+newElement.remove();
 
 // With function
 
