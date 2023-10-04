@@ -1,0 +1,9 @@
+Make a button that when clicked renders out two arrays of smileys from an object.
+
+You can use the following object, containing two arrays if you want.
+
+const emojis = {
+  catEmojis: ["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🐱"],
+  dogEmojis: ["🐶", "🐕", "🦮", "🐩", "🐾", "🐺", "🦊", "🦝", "🐕‍🦺", "🐩‍🦱"],
+};
+
