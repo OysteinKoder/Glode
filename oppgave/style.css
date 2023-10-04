@@ -1,1 +1,30 @@
+.card {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
+	background-image: linear-gradient(to right, red, orange);
+}
+
+.buttonContainer {
+	display: flex;
+	gap: 20px;
+}
+
+.p {
+	font-size: 32px;
+}
+
+.button {
+	cursor: pointer;
+	padding: 5px 10px;
+}
+
+.button:hover {
+	background-color: blue;
+	color: white;
+	border: 1px solid black;
+	border-radius: 3px;
+}
