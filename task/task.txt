@@ -1,0 +1,19 @@
+Task 1
+
+Render out the catEmojis in an unordered list when a button is clicked
+
+use the following object that contains the catEmojis array
+
+const emojis = {
+  catEmojis: ["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🐱"],
+  dogEmojis: ["🐶", "🐕", "🦮", "🐩", "🐾", "🐺", "🦊", "🦝", "🐕‍🦺", "🐩‍🦱"],
+};
+
+Bonus task (optional):
+- Render both catEmojis and dogEmojis in two separate unordered lists when the button is clicked.
+- Style the lists with css.
+- (hard) Add functionality where if the user clicks on a emoji, it will be added to the clipboard.
+
+recourses:
+
+
