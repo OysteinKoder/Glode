@@ -42,6 +42,6 @@ Once the repository is cloned, you can open it in VS Code. You can either:
 Use the command-line to navigate to the cloned repository directory and then type code . to open it in VS Code.
 Open VS Code manually and select "File" > "Open Folder," then navigate to the cloned repository folder and select it.
 Start Working:
-With the repository open in VS Code, you can start working on the code, make changes, and push them back to the GitHub repository when you're ready.
+With the repository open in VS Code, you can start working on the code.
 
 That's it! You've successfully downloaded a GitHub repository into Visual Studio Code using its URL.
