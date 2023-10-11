@@ -1,21 +1,25 @@
-Task 1
-
-Render out the catEmojis in an unordered list when a button is clicked
-
-use the following object that contains the catEmojis array
+Task one
+Render a list of cat emojis in an unordered list when a button is clicked.
+Use the provided object, emojis, which contains an array of cat emojis.
+javascriptCopy code
 
 const emojis = {
-  catEmojis: ["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🐱"],
-  dogEmojis: ["🐶", "🐕", "🦮", "🐩", "🐾", "🐺", "🦊", "🦝", "🐕‍🦺", "🐩‍🦱"],
+catEmojis: ["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🐱"],
+dogEmojis: ["🐶", "🐕", "🦮", "🐩", "🐾", "🐺", "🦊", "🦝", "🐕‍🦺", "🐩‍🦱"],
 };
 
-Task 2
-Style the lists with css.
 
-Bonus task (optional):
-- Render both catEmojis and dogEmojis in two separate unordered lists when the button is clicked.
-- (hard) Add functionality where if the user clicks on a emoji, it will be added to the clipboard.
 
-recourses:
+Style the lists using CSS and ensure they are responsive to different screen sizes.
+Implement CSS styles to format the unordered list generated in Task 1. Ensure that the layout looks good on various screen sizes.
+
+Task 2 ( optional)
+Render both catEmojis and dogEmojis in two separate unordered lists when the button is clicked.
+(Hard) Add functionality where if the user clicks on an emoji, it will be added to the clipboard.
+https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+Innlevering: 
+Netlify/vercel url
+Github repo url
 
 

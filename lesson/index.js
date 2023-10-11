@@ -1,79 +1,47 @@
-// Arrays
-const exampleArray = ["bil", "hund", "katt", "hest"];
+// Arrays (index, vi finner dataen med tall)
 
 // Array Methods basic
-exampleArray.unshift("klovn");
 
-exampleArray.shift();
-
-exampleArray.push("raggesokker");
-
-exampleArray.pop();
-
-console.log(exampleArray);
-
-// Objects
+// Objects (vi finner dataen med navn)
 
 const exampleObject = {
-  name: "john",
-  surname: "doug",
-  occupation: "baker",
-  age: 59,
+  name: "Øystein",
+  surname: "Ellingsen",
+  age: 31,
 };
-
-console.log(exampleObject.surname);
 
 // Array/Object
 
 const arrayObjectMix = [
-  {
-    dogRace: "korgi",
-    dogAge: 7,
-    furColor: "red",
-  },
-  {
-    catRace: "Blue Russian",
-    catLives: 8,
-    furColor: "Kinda blue",
-    catsMyAuntOwns: ["Luna", "Muffin", "Shadow", "Ginger", "Midnight", "Cleo"],
-  },
+  { name: "per", surname: "askeladden", age: 13 },
+  { name: "espen", surname: "askeladden", age: 9 },
+  { name: "pål", surname: "askeladden", age: 14 },
 ];
 
-console.log(arrayObjectMix[0].dogAge);
+console.log(arrayObjectMix[2].name);
 
 // Loops.
 
-const arrayLoop = [
-  "hey world",
-  "hey world",
-  "hey world",
-  "hey world",
-  "hey world",
-  "hey world",
-  "hey world",
-  "hey world",
-];
+const insertElementHere = document.querySelector("#insert-element-here");
 
-// ok. Så når vi vil loope igjennom et helt array,
-// så kan vi bruke array.length
+function createNewElement() {
+  const newElement = document.createElement("p");
 
-for (i = 0; i < arrayLoop.length; i++) {
-  console.log(arrayLoop[i]);
+  newElement.innerText = "det er lov å gjøre feil";
+
+  insertElementHere.appendChild(newElement);
 }
 
-// alle gå inn og stem på poll
+const list = document.querySelector("#list");
+const tingJegLiker = ["båt", "bil", "valper", "hubbabubba"];
 
-// javascript to manipulate the dom
-
-// const insertElementHere = document.querySelector("#insert-element-here");
-
-// const newElement = document.createElement("p");
-
-// newElement.id = "new-element";
-
-// insertElementHere.appendChild(newElement);
-
-// newElement.remove();
+function renderList() {
+  for (i = 0; i < tingJegLiker.length; i++) {
+    const newListElement = document.createElement("li");
+    newListElement.innerText = tingJegLiker[i];
+    list.appendChild(newListElement);
+  }
+}
 
 // With function
 
