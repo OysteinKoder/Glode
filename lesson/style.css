@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.list_wrapper {
+  width: fit-content;
+  border: blue solid 1px;
+  padding: 1rem;
+}
+
+li {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
