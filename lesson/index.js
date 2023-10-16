@@ -21,6 +21,7 @@ const arrayObjectMix = [
 console.log(arrayObjectMix[2].name);
 
 // Loops.
+// Here we are pushing an html paragraph with javascript into the index.html document.
 
 const insertElementHere = document.querySelector("#insert-element-here");
 
@@ -32,6 +33,7 @@ function createNewElement() {
   insertElementHere.appendChild(newElement);
 }
 
+// Here we are doing the same thing, but we are doing it for every index of an array.
 const list = document.querySelector("#list");
 const tingJegLiker = ["båt", "bil", "valper", "hubbabubba"];
 
@@ -43,15 +45,13 @@ function renderList() {
   }
 }
 
-// With function
+// Here we are console logging how much time a function takes.
+function longLoop() {
+  for (i = 0; i < 10000; i++) {
+    console.log("hello");
+  }
+}
 
-// newElement.innerHTML = "This is a new element!";
-
-// function createNewElement() {
-//   const newElement = document.createElement("p");
-//   newElement.style.border = "blue 1px solid";
-//   insertElementHere.appendChild(newElement);
-//   newElement.innerHTML = "This is a new element!";
-
-//   console.log("This is a new element!");
-// }
+console.time("longLoop");
+longLoop();
+console.timeEnd("longLoop");

@@ -9,7 +9,6 @@ dogEmojis: ["🐶", "🐕", "🦮", "🐩", "🐾", "🐺", "🦊", "🦝", "�
 };
 
 
-
 Style the lists using CSS and ensure they are responsive to different screen sizes.
 Implement CSS styles to format the unordered list generated in Task 1. Ensure that the layout looks good on various screen sizes.
 
