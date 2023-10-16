@@ -1,0 +1,43 @@
+Task: 
+
+Make a todo list with javaScript html and css. 
+
+Requirements:
+- It has to be able to add a new task
+- It has to have a completed task
+- It has to be styled with css in a responsive way
+- It has to store the tasks in local storage
+
+Delivery:
+- Github repo link 
+- Netlify/vercel link
+
+(Bonus tasks are not required, but if you want to learn more, try them out)
+
+Bonus: Medium
+- Add a checkbox to mark the task as done
+- When the checkbox is marked the task should be styled in a way 
+that it is clear that it is done.
+
+Bonus: Hard
+Add functionality so that you can log in on different devices and see the same tasks.
+This needs two things: authentication/login, and a database to store the tasks.
+I recommend using appwrite for this.
+
+- Add a login and auth system to the app,
+- Add a database where you can store the tasks.
+- You could use appwrite for this. 
+https://appwrite.io/
+
+resources:
+https://www.w3schools.com/html/html_forms.asp
+https://dev.to/iamcymentho/how-to-build-a-functional-to-do-list-app-with-javascript-html-and-css-a-step-by-step-guide-h9f
+https://anunaykashyap.hashnode.dev/to-do-list-app-using-html-css-javascript
+
+Appwrite documentation:
+https://appwrite.io/docs/products/auth/quick-start
+https://appwrite.io/docs/products/databases/quick-start
+
+ps: I think you can use cdn (content delivery network) for appwrite, 
+which is a way to use a library with a link inside a script instead of downloading it.
+https://www.freecodecamp.org/news/import-javascript-and-css-from-a-public-cdn/
