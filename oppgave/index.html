@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Enhet konverter</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<main>
+			<form>
+				<label for="converter">From Converter</label>
+				<input type="number" name="converter" id="myInputID" />
+
+				<label for="fromUnit">From</label>
+				<select name="fromUnit" id="fromValueID">
+					<option value="cm">CM</option>
+					<option value="m">M</option>
+					<option value="km">KM</option>
+				</select>
+
+				<label for="toUnit">To</label>
+				<select name="toUnit" id="toValueID">
+					<option value="cm">CM</option>
+					<option value="m">M</option>
+					<option value="km">KM</option>
+				</select>
+			</form>
+			<button onclick="unitConverter()">Konventer</button>
+
+			<p id="displayValueID"></p>
+		</main>
+	</body>
+</html>
