@@ -1,39 +1,52 @@
-// En funksjon som er satt opp til å bli aktivert via en onclick på Konvert-knappen i HTML
+// Dette er en funksjon som er satt opp for å bli utløst via en onclick når "Konvert"-knappen i HTML klikkes.
 function unitConverter() {
-	/* event.preventDefault er en metode vi setter inn som hindrer nettsiden fra å gjøre det den default ønsker å gjøre. I dette tilfellet er det å avslutte at form resetter når vi trykker på knappen. event = e. Ordet event er deprecated fordi de ønsker vi skal bruke e istedenfor som en forkortelse. Jeg anbefaler å bruke ordet, selv om det vil komme en strek igjennom. Bare vi er obs på hvorfor det er en error  */
+	/*
+	Event.preventDefault er en metode som brukes for å hindre standard oppførsel på en nettside. I dette tilfellet forhindrer den at et skjema blir nullstilt når knappen klikkes. "e" er "event" som en forkortelse. Begrepet "event" er utdatert, men vi bruker det for klarhet, til tross for en strek gjennom feilen.
+	*/
 	// event.preventDefault();
 
-	// Vi setter opp variablene som henter informasjon fra HTML dokumentet inne i funksjonen, for vi ønsker at verdiene vi henter skal bli oppdatert for hver gang vi trykker på knappen.
+	/*
+	Vi definerer variabler som henter informasjon fra HTML-dokumentet inne i funksjonen.
+	Dette gjør vi slik at verdiene vi henter oppdateres hver gang knappen klikkes.
+	*/
+	// Hent verdien fra et element med ID "myInputID".
 	const myInput = document.querySelector("#myInputID").value;
-	console.log(myInput);
-	const fromValue = document.querySelector("#fromValueID").value;
-	console.log(fromValue);
-	const toValue = document.querySelector("#toValueID").value;
-	console.log(toValue);
-	const displayValue = document.querySelector("#displayValueID");
-	console.log(displayValue);
+	console.log(myInput); // Logg verdien til konsollen for feilsøking.
 
-	// Vi setter opp en tom variabel som skal ta i mot resultatet vi setter opp under i if / else utrykk.
+	// Hent verdien fra et element med ID "fromValueID".
+	const fromValue = document.querySelector("#fromValueID").value;
+	console.log(fromValue); // Logg verdien til konsollen for feilsøking.
+
+	// Hent verdien fra et element med ID "toValueID".
+	const toValue = document.querySelector("#toValueID").value;
+	console.log(toValue); // Logg verdien til konsollen for feilsøking.
+
+	// Hent verdien fra et element med ID "displayValueID".
+	const displayValue = document.querySelector("#displayValueID");
+	console.log(displayValue); // Logg verdien til konsollen for feilsøking.
+
+	// Vi setter opp en tom variabel for å lagre resultatet som beregnes i de påfølgende if/else-setningene.
 	let result;
 
-	// Et if / else utrykk som sjekker om verdien vi har gitt stemmer over ens med verdien vi ønsker
-	// I denne betegnelsen sjekker vi om fromValue og toValue stemmer så vi kan gi korrekt mattestykke som skal regnes ut
+	/* 
+	En if/else-setning som sjekker om "fromValue" og "toValue" variablene matcher, slik at riktig matematisk operasjon kan utføres.
+	*/
 	if (fromValue === "cm" && toValue === "m") {
-		result = myInput / 100;
+		result = myInput / 100; // Konverter centimeter til meter.
 	} else if (fromValue === "cm" && toValue === "km") {
-		result = myInput / 100000;
+		result = myInput / 100000; // Konverter centimeter til kilometer.
 	} else if (fromValue === "m" && toValue === "cm") {
-		result = myInput * 100;
+		result = myInput * 100; // Konverter meter til centimeter.
 	} else if (fromValue === "m" && toValue === "km") {
-		result = myInput / 1000;
+		result = myInput / 1000; // Konverter meter til kilometer.
 	} else if (fromValue === "km" && toValue === "cm") {
-		result = myInput * 100000;
+		result = myInput * 100000; // Konverter kilometer til centimeter.
 	} else if (fromValue === "km" && toValue === "m") {
-		result = myInput * 1000;
+		result = myInput * 1000; // Konverter kilometer til meter.
 	} else {
 	}
 
 	// Når vi har et resultat fra if / else utrykket ønsker vi å vise det på nettsiden våres.
-	// Vi la til .toFixed() som går inn å begrenser hvor mange desimaltall vi ønsker i resultatet våres
+	// Vi bruker ".toFixed()" for å begrense antall desimaler i resultatet til 3.
 	displayValue.textContent = result.toFixed(3);
 }
