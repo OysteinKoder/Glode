@@ -19,7 +19,7 @@ Kommentarer
 */
 
 /*
-Enten / eller betingelse går inn å tar i mot flere data for å sjekke om det er sant eller usant og gir oss alternativer ut i fra hvilken data vi gir den.
+Enten eller betegnelsen går inn å tar i mot flere data for å sjekke om det er sant eller usant og gir oss alternativer ut i fra hvilken data vi gir den. (if/else statement)
 */
 
 // Sjekker om variabelen userName har en tom eller utfylt (string)
