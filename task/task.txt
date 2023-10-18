@@ -1,0 +1,47 @@
+Task:
+In this task, your goal is to create a simple web page that fetches data from a public API and displays it.
+
+requirements:
+
+- Select a public API that provides data of interest to you, you can choose whatever you like
+    But here is one suggestion:
+    JSONPlaceholder: A fake online REST API for testing and prototyping.
+    https://jsonplaceholder.typicode.com/
+
+    Pokemon api
+    https://pokeapi.co/
+
+- fetch the data using the fetch method in javascript
+
+- Add a .catch to your fetch request, so that if the request fails, you display an error message to the user.
+   
+- Console.log the data from the API
+
+- Display the data in a web page
+
+Delivery:
+
+    - Github repo
+    - Netlify/vercel link
+
+
+Bonus task is not mandatory, and is totally optional. If you finish your task early, i recommend trying it out.
+
+Bonus tasks medium difficulty:
+
+-   Add a filter to your data, so that the user can filter through the data based on a specific field.
+    For example, let the user filter through data from a weather api so that they get the weather
+    for a specific city or location.¨
+
+Bonus task hard difficulty:
+
+-   Setup and fetch the data from a headless cms.
+
+Bonus task super hard difficulty
+
+-   If you are using the pokemon api: make it so that two pokemon can battle each other.
+
+resources:
+-  ( fetch ) https://jackskylord.medium.com/how-to-use-javascript-fetch-to-display-api-results-in-html-7aa59936ed30
+
+Ps: You can always go hog-wild and do whatever you like as long as you solve the basic requirements. 
