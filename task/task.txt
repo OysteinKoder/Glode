@@ -4,7 +4,7 @@ Make a todo list with javaScript html and css.
 
 Requirements:
 - It has to be able to add a new task
-- It has to have a completed task
+- It has to have a remove task button
 - It has to be styled with css in a responsive way
 - It has to store the tasks in local storage
 
@@ -16,6 +16,7 @@ Delivery:
 
 Bonus: Medium
 - Add a checkbox to mark the task as done
+- Task should not be removed.
 - When the checkbox is marked the task should be styled in a way 
 that it is clear that it is done.
 
