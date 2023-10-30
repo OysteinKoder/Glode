@@ -7,11 +7,14 @@
 		<title>Theme Toggle</title>
 
 		<link rel="stylesheet" href="style.css" />
+
+		<!-- We have used type="module" instead of the keyword defer. As we want to have different modules with different codeblocks. The keyword defer is automatic with modules and is not needed. -->
 		<script type="module" src="script.js"></script>
 	</head>
 	<body class="body lightMode">
 		<header class="header">
 			<div>
+				<!-- We have in this instance created a button that have been modified in JS -->
 				<button>Toggle mode</button>
 			</div>
 			<nav class="navBar">
