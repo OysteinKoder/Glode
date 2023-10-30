@@ -1,0 +1,13 @@
+/* DARK LIGHT MODE TOGGLE */
+/*
+In this case we have created a lightMode and a darkMode that swaps background-color and color. Notice that it not change the .header and the .footer as they have fixed background-colors already.
+*/
+.lightMode {
+	background-color: #fdfdfd;
+	color: #0d0d0d;
+}
+
+.darkMode {
+	background-color: #0d0d0d;
+	color: #fdfdfd;
+}

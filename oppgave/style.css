@@ -1,6 +1,6 @@
 /*
-Adding a comment explaining that most of the CSS in this file is a copy/paste from another project of mine just to have some fancy looking CSS on some of the elements on the page. 
-Line 14-26 is what counts for us in this lesson
+	I have cleaned up the code and added the CSS for the theme toggle in its own folder. 
+	I have also removed unnecessary CSS to make it easier to read.
 */
 
 /* GENERAL */
@@ -9,20 +9,6 @@ Line 14-26 is what counts for us in this lesson
 	padding: 0;
 	box-sizing: border-box;
 	text-align: center;
-}
-
-/* DARK LIGHT MODE TOGGLE */
-/*
-In this case we have created a lightMode and a darkMode that swaps background-color and color. Notice that it not change the .header and the .footer as they have fixed background-colors already.
-*/
-.lightMode {
-	background-color: #fdfdfd;
-	color: #0d0d0d;
-}
-
-.darkMode {
-	background-color: #0d0d0d;
-	color: #fdfdfd;
 }
 
 /* HEADER */
@@ -46,10 +32,6 @@ In this case we have created a lightMode and a darkMode that swaps background-co
 	align-items: flex-end;
 }
 
-.burgerButton {
-	display: none;
-}
-
 .navList {
 	display: flex;
 	flex-direction: row;
@@ -58,48 +40,8 @@ In this case we have created a lightMode and a darkMode that swaps background-co
 	list-style-type: none;
 }
 
-a {
-	display: block;
-	color: black;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
 .navItem {
 	padding: 0.5em 1em;
-}
-
-/* MOBILE S TO MOBILE L */
-@media screen and (max-width: 426px) {
-	.header {
-		align-items: flex-start;
-	}
-
-	.burgerButton {
-		display: inline;
-	}
-
-	.navBar {
-		flex-direction: column-reverse;
-	}
-
-	.navList {
-		display: none;
-	}
-
-	a {
-		padding-inline: 0;
-	}
-
-	.navHamburger {
-		display: flex;
-		flex-direction: column;
-	}
 }
 
 /* MAIN */
@@ -107,7 +49,6 @@ a:hover {
 	min-height: 100vh;
 	min-height: 100svh;
 	width: 100%;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -115,7 +56,6 @@ a:hover {
 }
 
 /* FOOTER */
-
 .footer {
 	background-color: #fdfdfd;
 }
