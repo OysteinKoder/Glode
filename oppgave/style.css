@@ -1,61 +1,66 @@
-/*
-	I have cleaned up the code and added the CSS for the theme toggle in its own folder. 
-	I have also removed unnecessary CSS to make it easier to read.
-*/
-
-/* GENERAL */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	text-align: center;
+body {
+  margin: 0 auto;
+  height: 100vh;
 }
 
-/* HEADER */
-.header {
-	position: sticky;
-	top: 0;
-	min-width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #fdfdfd;
-	border-bottom: 2px solid black;
-	padding: 1em;
+html {
+  font-size: 32px;
 }
 
-/* NAV */
-.navBar {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: center;
-	align-items: flex-end;
+header {
+  border-bottom: grey 3px solid;
 }
 
-.navList {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: flex-end;
-	list-style-type: none;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
 }
 
-.navItem {
-	padding: 0.5em 1em;
+.navBarUl {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 2rem;
+  list-style: none;
 }
 
-/* MAIN */
-.section {
-	min-height: 100vh;
-	min-height: 100svh;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.hamburger {
+  display: none;
+  height: 1rem;
 }
 
-/* FOOTER */
-.footer {
-	background-color: #fdfdfd;
+.fixedBurger {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 12;
+  height: 1rem;
+}
+
+.showNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: fixed;
+  background-color: white;
+  top: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .hamburger {
+    display: block;
+    height: 2rem;
+    margin: auto;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+  .navBarUl {
+    display: none;
+  }
 }

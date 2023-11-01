@@ -1,9 +1,18 @@
-// Import the "themeToggle" function from a module located in "themeToggle.js"
-import { themeToggle } from "./themeToggle.js";
+// html elements we need to use javascript on
+const navBar = document.querySelector(".navBarUl");
+const hamburger = document.querySelector(".hamburger");
+// tracks if the navbar is opened or not
+let navOpen = false;
 
-// Find and store a reference to the <button> element in the document
-// In this instance I have directly targeted the element, normally we would target an ID or class name
-const button = document.querySelector("button");
-
-// Add an event listener to the button, listening for a "click" event, and preforming the function when activated
-button.addEventListener("click", themeToggle);
+// toggles navbar and changes the styling
+function toggleNav() {
+  if (navOpen === false) {
+    navBar.classList = "showNav";
+    hamburger.classList = "fixedBurger";
+    navOpen = true;
+  } else {
+    navBar.classList = "navBarUl";
+    hamburger.classList = "hamburger";
+    navOpen = false;
+  }
+}
