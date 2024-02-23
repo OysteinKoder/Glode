@@ -1,0 +1,35 @@
+.ParallaxVideo {
+  height: 300px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.ParallaxVideo video {
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -999;
+}
+.ParallaxVideo h1 {
+  color: #fff;
+  font-size: 76px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.paragraph p {
+  font-size: 40px;
+}
